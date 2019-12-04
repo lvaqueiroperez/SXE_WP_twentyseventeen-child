@@ -7,13 +7,13 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage twentyseventeen-child
  * @since 1.0
  * @version 1.2
  */
 
 ?>
-
+<!--MODIFICAMOS EL FOOTER (también desde el css)-->
 		</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
@@ -39,10 +39,9 @@
 					<?php
 				endif;
 				
-				
-				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
-				<h1>Esto es un footer en la página principal</h1>
+				
+				<h1 style="color:#2cb3e5">Esto es un footer en el template17child</h1>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->

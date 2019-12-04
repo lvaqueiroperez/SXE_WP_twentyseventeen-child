@@ -11,3 +11,17 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyseventeenchild
 */
+body.has-header-image .site-title a{color:#73d18d}
+/*COLOR DE LOS TÍTULOS DE LAS PÁGINAS:*/
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title{color: #00711D;}
+
+/*PARA CAMBIAR EL "proudly powered by wordpress"*/
+.site-info a {
+    color: #666;font-style: italic;
+}
+/*TÍTULOS DE LOS POSTS*/
+.entry-title a {
+    color: #00711D;
+    text-decoration: none;
+    margin-left: -2px;
+}

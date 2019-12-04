@@ -1,9 +1,10 @@
 <?php
 /**
-* Template Name: Full Width Page 17 CHILD
+* Template Name: template-17child
+* Template Post Type: page
 *
 * @package WordPress
-* @subpackage Twenty_Fourteen
+* @subpackage twentyseventeen-child
 * @since Twenty Fourteen 1.0
 */
 
@@ -33,4 +34,4 @@ get_header(); ?>
 </div><!-- .wrap -->
 
 <?php
-get_footer();
+get_footer("template17child");

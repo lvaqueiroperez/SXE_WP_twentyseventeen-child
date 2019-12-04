@@ -37,24 +37,17 @@ get_header(); ?>
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
-					//PARA QUE SE MUESTREN LOS POSTS CON SUS EXCERPTS:
-					?>
-					<!--(cerramos para poder poner un html)-->
-					<h3>Estoy en el loop</h3>
-					<!--volvemos a abrir para php-->
-					<?php the_excerpt();
+					the_author();
+					the_excerpt();
+					the_category();
 
 					/*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					 //ESTO CARGA EL TÍTULO Y CIERTO CONTENIDO DE TODOS LOS POSTS QUE TENGAMOS
 					get_template_part( 'template-parts/post/content', get_post_format() );
-					
-					
-					
-					
+
 				endwhile;
 
 				the_posts_pagination(
@@ -70,8 +63,12 @@ get_header(); ?>
 				get_template_part( 'template-parts/post/content', 'none' );
 
 			endif;
+			
+			
 			?>
-
+		
+			<!--MODIFICACIÓN:-->
+		<h1>Esto es un texto html</h1>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
