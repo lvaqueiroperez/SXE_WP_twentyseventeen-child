@@ -1,14 +1,11 @@
 <?php
 /**
-* Template Name: template-17child
-* Template Post Type: page
+* Template Name: pruebaTemplate1
 *
 * @package WordPress
 * @subpackage twentyseventeen-child
 * @since Twenty Fourteen 1.0
 */
-
-
 get_header(); ?>
 
 <div class="wrap">
@@ -34,4 +31,8 @@ get_header(); ?>
 </div><!-- .wrap -->
 
 <?php
-get_footer("template17child");
+if(is_page("HelloWorld Page")){
+get_footer("helloWorldPage");
+}else{
+    get_footer("pruebaTemplate1");
+}

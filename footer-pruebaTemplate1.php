@@ -39,15 +39,18 @@
 					<?php
 				endif;
 				
-				
+				//esto es para que aparezca el "proudly powered by wp"
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
-				<h1>Página hecha por Luis</h1>
+				<!--Ponemos el mensaje que queramos en el footer del template-->
+				<h1 style="font-style:italic;">Hecho por Luis</h1>
+				
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
+
 
 </body>
 </html>

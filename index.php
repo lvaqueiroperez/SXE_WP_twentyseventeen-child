@@ -68,7 +68,7 @@ get_header(); ?>
 			?>
 		
 			<!--MODIFICACIÓN:-->
-		<h1>Esto es un texto html</h1>
+		<!--<h1>Esto es un texto html</h1>-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
